@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GitHubAuth
 //
-//  Created by Дарья Полякова on 14.05.2022.
+//  Created by Denis Ivanov on 14.05.2022.
 //
 
 import UIKit
@@ -11,9 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .systemBackground
     }
-
-
 }
-
