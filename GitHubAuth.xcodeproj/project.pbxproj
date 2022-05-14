@@ -15,9 +15,12 @@
 		F647189A282F251800E1D48B /* AuthUrlConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471899282F251800E1D48B /* AuthUrlConfigure.swift */; };
 		F647189C282F30EE00E1D48B /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647189B282F30EE00E1D48B /* NetworkRequestService.swift */; };
 		F64718A0282F3CB800E1D48B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F647189F282F3CB800E1D48B /* README.md */; };
+		F64718A2282F3D2A00E1D48B /* AuthorizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A1282F3D2A00E1D48B /* AuthorizationsViewController.swift */; };
+		F64718A5282F3D8D00E1D48B /* AuthorizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A4282F3D8D00E1D48B /* AuthorizationsViewModel.swift */; };
+		F64718A7282F425C00E1D48B /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A6282F425C00E1D48B /* LoadingViewModel.swift */; };
 		F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02D282EFD3400C17954 /* AppDelegate.swift */; };
 		F67DB030282EFD3400C17954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02F282EFD3400C17954 /* SceneDelegate.swift */; };
-		F67DB032282EFD3400C17954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB031282EFD3400C17954 /* ViewController.swift */; };
+		F67DB032282EFD3400C17954 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB031282EFD3400C17954 /* LoadingViewController.swift */; };
 		F67DB037282EFD3700C17954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67DB036282EFD3700C17954 /* Assets.xcassets */; };
 		F67DB03A282EFD3700C17954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67DB038282EFD3700C17954 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -31,10 +34,13 @@
 		F6471899282F251800E1D48B /* AuthUrlConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUrlConfigure.swift; sourceTree = "<group>"; };
 		F647189B282F30EE00E1D48B /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
 		F647189F282F3CB800E1D48B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F64718A1282F3D2A00E1D48B /* AuthorizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationsViewController.swift; sourceTree = "<group>"; };
+		F64718A4282F3D8D00E1D48B /* AuthorizationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationsViewModel.swift; sourceTree = "<group>"; };
+		F64718A6282F425C00E1D48B /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
 		F67DB02A282EFD3400C17954 /* GitHubAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67DB02D282EFD3400C17954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67DB02F282EFD3400C17954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F67DB031282EFD3400C17954 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F67DB031282EFD3400C17954 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		F67DB036282EFD3700C17954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67DB039282EFD3700C17954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F67DB03B282EFD3700C17954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +78,33 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		F64718A3282F3D7F00E1D48B /* Authorizations */ = {
+			isa = PBXGroup;
+			children = (
+				F64718A1282F3D2A00E1D48B /* AuthorizationsViewController.swift */,
+				F64718A4282F3D8D00E1D48B /* AuthorizationsViewModel.swift */,
+			);
+			path = Authorizations;
+			sourceTree = "<group>";
+		};
+		F64718A8282F42B200E1D48B /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				F67DB031282EFD3400C17954 /* LoadingViewController.swift */,
+				F64718A6282F425C00E1D48B /* LoadingViewModel.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		F64718A9282F42BD00E1D48B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F64718A8282F42B200E1D48B /* Loading */,
+				F64718A3282F3D7F00E1D48B /* Authorizations */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		F67DB021282EFD3400C17954 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +127,7 @@
 			children = (
 				F67DB02D282EFD3400C17954 /* AppDelegate.swift */,
 				F67DB02F282EFD3400C17954 /* SceneDelegate.swift */,
-				F67DB031282EFD3400C17954 /* ViewController.swift */,
+				F64718A9282F42BD00E1D48B /* Screens */,
 				F6471898282F24DA00E1D48B /* Auth */,
 				F647189D282F36A200E1D48B /* Network */,
 				F67DB036282EFD3700C17954 /* Assets.xcassets */,
@@ -175,9 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64718A2282F3D2A00E1D48B /* AuthorizationsViewController.swift in Sources */,
 				F6471897282F1ABC00E1D48B /* MyError.swift in Sources */,
-				F67DB032282EFD3400C17954 /* ViewController.swift in Sources */,
+				F64718A7282F425C00E1D48B /* LoadingViewModel.swift in Sources */,
+				F67DB032282EFD3400C17954 /* LoadingViewController.swift in Sources */,
 				F647189C282F30EE00E1D48B /* NetworkRequestService.swift in Sources */,
+				F64718A5282F3D8D00E1D48B /* AuthorizationsViewModel.swift in Sources */,
 				F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */,
 				F647189A282F251800E1D48B /* AuthUrlConfigure.swift in Sources */,
 				F647188F282F051D00E1D48B /* UrlConfigureProtocol.swift in Sources */,
