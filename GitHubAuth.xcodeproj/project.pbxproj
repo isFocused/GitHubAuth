@@ -18,6 +18,7 @@
 		F64718A2282F3D2A00E1D48B /* AuthorizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A1282F3D2A00E1D48B /* AuthorizationsViewController.swift */; };
 		F64718A5282F3D8D00E1D48B /* AuthorizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A4282F3D8D00E1D48B /* AuthorizationsViewModel.swift */; };
 		F64718A7282F425C00E1D48B /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718A6282F425C00E1D48B /* LoadingViewModel.swift */; };
+		F64718AB282F44E200E1D48B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64718AA282F44E200E1D48B /* UIView+Extension.swift */; };
 		F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02D282EFD3400C17954 /* AppDelegate.swift */; };
 		F67DB030282EFD3400C17954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02F282EFD3400C17954 /* SceneDelegate.swift */; };
 		F67DB032282EFD3400C17954 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB031282EFD3400C17954 /* LoadingViewController.swift */; };
@@ -37,6 +38,7 @@
 		F64718A1282F3D2A00E1D48B /* AuthorizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationsViewController.swift; sourceTree = "<group>"; };
 		F64718A4282F3D8D00E1D48B /* AuthorizationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationsViewModel.swift; sourceTree = "<group>"; };
 		F64718A6282F425C00E1D48B /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		F64718AA282F44E200E1D48B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F67DB02A282EFD3400C17954 /* GitHubAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67DB02D282EFD3400C17954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67DB02F282EFD3400C17954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,34 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		F64718AC282F48B000E1D48B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F64718AA282F44E200E1D48B /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F64718AD282F48C000E1D48B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				F67DB036282EFD3700C17954 /* Assets.xcassets */,
+				F67DB038282EFD3700C17954 /* LaunchScreen.storyboard */,
+				F67DB03B282EFD3700C17954 /* Info.plist */,
+				F64718AC282F48B000E1D48B /* Extensions */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		F64718AE282F48CF00E1D48B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F6471898282F24DA00E1D48B /* Auth */,
+				F647189D282F36A200E1D48B /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		F67DB021282EFD3400C17954 = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +158,8 @@
 				F67DB02D282EFD3400C17954 /* AppDelegate.swift */,
 				F67DB02F282EFD3400C17954 /* SceneDelegate.swift */,
 				F64718A9282F42BD00E1D48B /* Screens */,
-				F6471898282F24DA00E1D48B /* Auth */,
-				F647189D282F36A200E1D48B /* Network */,
-				F67DB036282EFD3700C17954 /* Assets.xcassets */,
-				F67DB038282EFD3700C17954 /* LaunchScreen.storyboard */,
-				F67DB03B282EFD3700C17954 /* Info.plist */,
+				F64718AE282F48CF00E1D48B /* Service */,
+				F64718AD282F48C000E1D48B /* Supports */,
 			);
 			path = GitHubAuth;
 			sourceTree = "<group>";
@@ -216,6 +243,7 @@
 				F64718A5282F3D8D00E1D48B /* AuthorizationsViewModel.swift in Sources */,
 				F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */,
 				F647189A282F251800E1D48B /* AuthUrlConfigure.swift in Sources */,
+				F64718AB282F44E200E1D48B /* UIView+Extension.swift in Sources */,
 				F647188F282F051D00E1D48B /* UrlConfigureProtocol.swift in Sources */,
 				F6471893282F068B00E1D48B /* AuthService.swift in Sources */,
 				F6471891282F05B000E1D48B /* NetworkService.swift in Sources */,
@@ -362,7 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubAuth/Info.plist;
+				INFOPLIST_FILE = GitHubAuth/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -389,7 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubAuth/Info.plist;
+				INFOPLIST_FILE = GitHubAuth/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
