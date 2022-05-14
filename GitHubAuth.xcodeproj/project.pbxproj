@@ -41,6 +41,7 @@
 		F67DB021282EFD3400C17954 = {
 			isa = PBXGroup;
 			children = (
+				F647189E282F3B1A00E1D48B /* README.md */,
 				F67DB02C282EFD3400C17954 /* GitHubAuth */,
 				F67DB02B282EFD3400C17954 /* Products */,
 			);
@@ -60,7 +61,6 @@
 				F67DB02D282EFD3400C17954 /* AppDelegate.swift */,
 				F67DB02F282EFD3400C17954 /* SceneDelegate.swift */,
 				F67DB031282EFD3400C17954 /* ViewController.swift */,
-				F647189E282F3B1A00E1D48B /* README.md */,
 				F67DB033282EFD3400C17954 /* Main.storyboard */,
 				F67DB036282EFD3700C17954 /* Assets.xcassets */,
 				F67DB038282EFD3700C17954 /* LaunchScreen.storyboard */,
