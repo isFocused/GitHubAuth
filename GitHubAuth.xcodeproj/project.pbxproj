@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F647188F282F051D00E1D48B /* UrlConfigureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647188E282F051D00E1D48B /* UrlConfigureProtocol.swift */; };
+		F6471891282F05B000E1D48B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471890282F05B000E1D48B /* NetworkService.swift */; };
+		F6471893282F068B00E1D48B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471892282F068B00E1D48B /* AuthService.swift */; };
+		F6471895282F07F200E1D48B /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471894282F07F200E1D48B /* AuthInfo.swift */; };
+		F6471897282F1ABC00E1D48B /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471896282F1ABC00E1D48B /* MyError.swift */; };
+		F647189A282F251800E1D48B /* AuthUrlConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6471899282F251800E1D48B /* AuthUrlConfigure.swift */; };
+		F647189C282F30EE00E1D48B /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647189B282F30EE00E1D48B /* NetworkRequestService.swift */; };
+		F64718A0282F3CB800E1D48B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F647189F282F3CB800E1D48B /* README.md */; };
 		F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02D282EFD3400C17954 /* AppDelegate.swift */; };
 		F67DB030282EFD3400C17954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB02F282EFD3400C17954 /* SceneDelegate.swift */; };
 		F67DB032282EFD3400C17954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DB031282EFD3400C17954 /* ViewController.swift */; };
@@ -15,7 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F647189E282F3B1A00E1D48B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F647188E282F051D00E1D48B /* UrlConfigureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConfigureProtocol.swift; sourceTree = "<group>"; };
+		F6471890282F05B000E1D48B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F6471892282F068B00E1D48B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F6471894282F07F200E1D48B /* AuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
+		F6471896282F1ABC00E1D48B /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
+		F6471899282F251800E1D48B /* AuthUrlConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUrlConfigure.swift; sourceTree = "<group>"; };
+		F647189B282F30EE00E1D48B /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
+		F647189F282F3CB800E1D48B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F67DB02A282EFD3400C17954 /* GitHubAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67DB02D282EFD3400C17954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67DB02F282EFD3400C17954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6471898282F24DA00E1D48B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F6471892282F068B00E1D48B /* AuthService.swift */,
+				F6471894282F07F200E1D48B /* AuthInfo.swift */,
+				F6471899282F251800E1D48B /* AuthUrlConfigure.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F647189D282F36A200E1D48B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F647189B282F30EE00E1D48B /* NetworkRequestService.swift */,
+				F6471890282F05B000E1D48B /* NetworkService.swift */,
+				F647188E282F051D00E1D48B /* UrlConfigureProtocol.swift */,
+				F6471896282F1ABC00E1D48B /* MyError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F67DB021282EFD3400C17954 = {
 			isa = PBXGroup;
 			children = (
-				F647189E282F3B1A00E1D48B /* README.md */,
+				F647189F282F3CB800E1D48B /* README.md */,
 				F67DB02C282EFD3400C17954 /* GitHubAuth */,
 				F67DB02B282EFD3400C17954 /* Products */,
 			);
@@ -59,6 +95,8 @@
 				F67DB02D282EFD3400C17954 /* AppDelegate.swift */,
 				F67DB02F282EFD3400C17954 /* SceneDelegate.swift */,
 				F67DB031282EFD3400C17954 /* ViewController.swift */,
+				F6471898282F24DA00E1D48B /* Auth */,
+				F647189D282F36A200E1D48B /* Network */,
 				F67DB036282EFD3700C17954 /* Assets.xcassets */,
 				F67DB038282EFD3700C17954 /* LaunchScreen.storyboard */,
 				F67DB03B282EFD3700C17954 /* Info.plist */,
@@ -124,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64718A0282F3CB800E1D48B /* README.md in Resources */,
 				F67DB03A282EFD3700C17954 /* LaunchScreen.storyboard in Resources */,
 				F67DB037282EFD3700C17954 /* Assets.xcassets in Resources */,
 			);
@@ -136,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6471897282F1ABC00E1D48B /* MyError.swift in Sources */,
 				F67DB032282EFD3400C17954 /* ViewController.swift in Sources */,
+				F647189C282F30EE00E1D48B /* NetworkRequestService.swift in Sources */,
 				F67DB02E282EFD3400C17954 /* AppDelegate.swift in Sources */,
+				F647189A282F251800E1D48B /* AuthUrlConfigure.swift in Sources */,
+				F647188F282F051D00E1D48B /* UrlConfigureProtocol.swift in Sources */,
+				F6471893282F068B00E1D48B /* AuthService.swift in Sources */,
+				F6471891282F05B000E1D48B /* NetworkService.swift in Sources */,
 				F67DB030282EFD3400C17954 /* SceneDelegate.swift in Sources */,
+				F6471895282F07F200E1D48B /* AuthInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
